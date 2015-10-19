@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <script src="app.js"></script>
+    <link href="style.css" rel="stylesheet">
+</head>
+<body>
+<div class="main">
+<div class="qms">
+    <h1>QMS</h1>
+
+    <form>
+        <ul>
+            <li><label>&lambda;  <input type="text" id="lambda" ></label></li>
+            <li><label>&mu;  <input type="text" id="myu"></label></li>
+            <li><label>t<sub>1</sub>  <input type="text" id="t1" value="4"></label></li>
+            <li><label>t<sub>2  </sub><input type="text" id="t2" value="8" ></label></li>
+            <li><label>N  <input type="text" id="n" value="1000"></label></li>
+
+            <li><input type="button" value="Розрахувати" onclick="main()"></li>
+        </ul>
+    </form>
+</div>
+<div class="result">
+    <table border="1">
+        <tr>
+            <th>LIFO</th>
+            <th>RAND</th>
+        </tr>
+        <tr><td colspan="2" align="center">Середня дисперсія </td></tr>
+        <tr>
+        <td id="lifo_deviation"> </td>
+        <td id="rand_deviation"> </td>
+        </tr>
+        <tr><td colspan="2" align="center">Час знаходження в системі</td></tr>
+        <tr>
+            <td id="lifo_average_system_time"> </td>
+            <td id="rand_average_system_time"> </td>
+        </tr>
+        <tr><td colspan="2" align="center">Час очікування</td></tr>
+        <tr>
+            <td id="lifo_average_wait_time"> </td>
+            <td id="rand_average_wait_time"> </td>
+        </tr>
+        <tr><td colspan="2" align="center">Час обробки</td></tr>
+        <tr>
+            <td id="lifo_average_serve_time"> </td>
+            <td id="rand_average_serve_time"> </td>
+        </tr>
+        <tr><td colspan="2" align="center">Загальна актуальність</td></tr>
+        <tr>
+            <td id="lifo_total_relevance"> </td>
+            <td id="rand_total_relevance"> </td>
+        </tr>
+       <!-- <tr><td colspan="2" align="center"></td></tr>
+        <tr>
+            <td id="lifo_completed"> </td>
+            <td id="rand_completed"> </td>
+        </tr>-->
+
+        <tr><td colspan="2" align="center">Функція</td></tr>
+        <tr>
+            <td id="lifo_function"> </td>
+            <td id="rand_function"> </td>
+        </tr>
+    </table>
+
+</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,11 @@
+.main {
+    position: absolute;
+    left: 40%;
+
+}
+li {
+    list-style-type: none;
+}
+ul {
+    padding-left: 0;
+}
